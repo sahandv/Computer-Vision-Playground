@@ -13,7 +13,7 @@ It's pretty simple actually. The system works like this:
 
 4- Add texts to a file and number the crops of image which are potntially panels.
 
-The software uses QT5 and 4, OpenCV, tesseract and h-spell libs.
+The software uses QT5 and 4, OpenCV, tesseract and h-spell libs. Please remember to put tesseract dictionaries in system path, or any path that it has to be put in :)
 
 Have fun and don't run this code, unless you know what you are doing! But you may use some snippets for:
 
