@@ -1,5 +1,5 @@
 %% Code by sahand 2018
-%% Task 1 :
+%% Simple rotations
 % Load TEAPOT
 obj = readObj('wt_teapot.obj');
 v1_1 = obj.v;
@@ -75,7 +75,7 @@ pt = patch( vf ,'FaceColor','blue','EdgeColor','none','FaceAlpha',0.5);
 daspect([1,1,1]) ; view(-3,4) ; axis tight ; camlight ; lighting gouraud
 hold off
 
-%% Task2 : 
+%% Comparing rotations with rodrigues
 % Calc rotation matrices R2_w1 and R2_w2
 w2_1 = [1, 0.5, 0];
 w2_2 = [0.3, 0.7, -1];
@@ -112,7 +112,7 @@ pt = patch( vf ,'FaceColor','blue','EdgeColor','none','FaceAlpha',0.5);
 daspect([1,1,1]) ; view(-3,4) ; axis tight ; camlight ; lighting gouraud
 hold off
 
-%% Task3 :
+%% Rotating in 6 ways
 % Selection of w3_1 to w3_6, Assuming w = [0.3, 0.7, -1]
 w3_1 = [0.3, 0.7, -1];
 w3_2 = [-0.3, 0.7, -1];
@@ -185,7 +185,7 @@ daspect([1,1,1]) ; view(-3,4) ; axis tight ; camlight ; lighting gouraud
 
 hold off
 
-%% Task 4 :
+%% Ratation by quaternions
 % Get quaternion representations
 Q1_x = w2_1_unit(1)*sin(norm(w2_1)/2);
 Q1_y = w2_1_unit(2)*sin(norm(w2_1)/2);
